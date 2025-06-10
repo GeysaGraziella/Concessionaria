@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #2e2e2e;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #1c1c1c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #3a506b;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo span {
+  color: #1f2e41;
+  font-weight: 700;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #3a506b;
+}
+
+.btn {
+  background-color: #3a506b;
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #3a506b;
+  border: 2px solid #3a506b;
+}
+
+/* Hero */
+.hero {
+  background: #e5e5e5;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  color: #666666;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* Destaques */
+.destaques {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  gap: 30px;
+}
+
+.destaques .box {
+  flex: 1 1 250px;
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: #2e2e2e;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.destaques .box i {
+  font-size: 2rem;
+  color: #3a506b;
+  margin-bottom: 15px;
+}
+
+.destaques .box:hover {
+  transform: translateY(-5px);
+}
+/* Pacotes - página pacotes.html */
+.curso-container {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cursos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.curso-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.curso-card:hover {
+  transform: translateY(-5px);
+}
+
+.curso-card .icon {
+  font-size: 2rem;
+  color: #3a506b;
+  margin-bottom: 10px;
+}
+
+.detalhes {
+  display: inline-block;
+  margin-top: 10px;
+  color: #3a506b;
+  text-decoration: none;
+}
+
+.detalhes:hover {
+  text-decoration: underline;
+}
+
+/* Login e Cadastro - login.html, new.html */
+.login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #3a506b;
+}
+
+.login-container input,
+.login-container select,
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button {
+  background-color: #3a506b;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #1f2e41;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #3a506b;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Testemunhos */
+.testemunhos {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testemunhos h2 {
+  color: #3a506b;
+  margin-bottom: 30px;
+}
+
+.comentario {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  color: #444;
+  font-style: italic;
+}
+
+/* Rodapé */
+footer {
+  background-color: #1c1c1c;
+  padding: 20px;
+  text-align: center;
+  color: #cccccc;
+}
+
+footer .social-icons a {
+  color: #3a506b;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: #1f2e41;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .destaques {
+    flex-direction: column;
+    align-items: center;
+  }
+}

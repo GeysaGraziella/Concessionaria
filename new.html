@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoPrime - Cadastro</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon"/>
+</head>
+<body>
+
+  <div class="header">
+    <h2 class="logo">
+      <a href="index.html"><i class="fas fa-car-side"></i> Auto<span>Prime</span></a>
+    </h2>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="pacotes.html">Pacotes</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
+    <a href="login.html" class="btn"><i class="fas fa-sign-in-alt"></i> Login</a>
+  </div>
+
+  <main class="login-container">
+    <h2><i class="fas fa-user-plus"></i> Criar nova conta</h2>
+    <form>
+      <input type="text" placeholder="Nome completo" required />
+      <input type="email" placeholder="E-mail" required />
+      <input type="password" placeholder="Senha" required />
+      <input type="password" placeholder="Confirmar senha" required />
+
+      <div class="form-group">
+        <label for="tipoVeiculo" class="form-label">Tipo de Veículo</label>
+        <select id="tipoVeiculo" name="tipoVeiculo" class="form-select" required>
+          <option value="">Selecione uma opção</option>
+          <option value="novo">Novo</option>
+          <option value="seminovo">Seminovo</option>
+          <option value="usado">Usado</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="preferencia" class="form-label">Categoria de Interesse</label>
+        <select id="preferencia" name="preferencia" class="form-select" required>
+          <option value="">Escolha uma opção</option>
+          <option value="suv">SUV</option>
+          <option value="sedan">Sedã</option>
+          <option value="hatch">Hatch</option>
+          <option value="pickup">Picape</option>
+          <option value="eletrico">Elétrico</option>
+        </select>
+      </div>
+
+      <button type="submit"><i class="fas fa-user-plus"></i> Cadastrar</button>
+    </form>
+
+    <a href="login.html" class="back-link">← Já tem conta? Entrar</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AutoPrime Concessionária. Todos os direitos reservados.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
