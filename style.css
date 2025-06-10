@@ -9,8 +9,6 @@ body {
   background-color: #f4f4f4;
   color: #2e2e2e;
 }
-
-/* Cabeçalho */
 .header {
   background-color: #1c1c1c;
   display: flex;
@@ -77,7 +75,6 @@ body {
   border: 2px solid #3a506b;
 }
 
-/* Hero */
 .hero {
   background: #e5e5e5;
   padding: 80px 20px;
@@ -96,7 +93,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* Destaques */
 .destaques {
   display: flex;
   justify-content: space-around;
@@ -126,7 +122,6 @@ body {
 .destaques .box:hover {
   transform: translateY(-5px);
 }
-/* Pacotes - página pacotes.html */
 .curso-container {
   padding: 60px 20px;
   text-align: center;
@@ -169,8 +164,6 @@ body {
 .detalhes:hover {
   text-decoration: underline;
 }
-
-/* Login e Cadastro - login.html, new.html */
 .login-container {
   max-width: 400px;
   margin: 80px auto;
@@ -218,7 +211,6 @@ body {
   text-decoration: underline;
 }
 
-/* Testemunhos */
 .testemunhos {
   background-color: #ffffff;
   padding: 60px 20px;
@@ -240,7 +232,6 @@ body {
   font-style: italic;
 }
 
-/* Rodapé */
 footer {
   background-color: #1c1c1c;
   padding: 20px;
@@ -259,7 +250,6 @@ footer .social-icons a:hover {
   color: #1f2e41;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
